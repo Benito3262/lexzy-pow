@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lexzy | Web3 content, distribution and community</title>
+<link rel="icon" href="avatar.jpg">
+<meta property="og:image" content="avatar.jpg">
+<meta name="description" content="Lexzy helps Web3 projects get seen, understood and remembered through content, distribution and community.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#E8EEF2; --ink:#16233B; --muted:#52627A; --line:#B9C6D2; --mark:#F4B83A; --mark-ink:#16233B;
+  --head:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#101826;--ink:#E6ECF3;--muted:#9AA9BC;--line:#2B3A52;--mark:#F4B83A;--mark-ink:#101826}
+}
+:root[data-theme="dark"]{--paper:#101826;--ink:#E6ECF3;--muted:#9AA9BC;--line:#2B3A52;--mark:#F4B83A;--mark-ink:#101826}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.125rem/1.65 var(--body)}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--mark);outline-offset:3px}
+.wrap{max-width:48rem;margin:0 auto;padding:0 1.25rem}
+header{display:flex;justify-content:space-between;align-items:baseline;padding:1.5rem 0;flex-wrap:wrap;gap:.5rem 1.25rem}
+header strong{font:800 1.25rem var(--head)}
+nav{display:flex;gap:1.1rem;font:500 1rem var(--head);flex-wrap:wrap}
+nav a{text-decoration:none;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--mark)}
+.hero{padding:3rem 0 4rem}
+.avatar{width:7.5rem;height:7.5rem;border-radius:50%;object-fit:cover;display:block;margin:0 0 1.5rem;border:3px solid var(--mark);box-shadow:0 0 0 6px color-mix(in srgb,var(--mark) 25%,transparent)}
+.tag{font:500 1.05rem var(--head);color:var(--muted);margin:0 0 1rem}
+h1{font:800 clamp(2.5rem,9.5vw,4.75rem)/1.02 var(--head);letter-spacing:-.03em;margin:0 0 1.5rem}
+h1 span{background:linear-gradient(transparent 58%,var(--mark) 58% 92%,transparent 92%);background-size:0 100%;background-repeat:no-repeat;animation:mark 1.1s .4s ease-out forwards}
+@keyframes mark{to{background-size:100% 100%}}
+@media (prefers-reduced-motion:reduce){h1 span{animation:none;background-size:100% 100%}html{scroll-behavior:auto}}
+.lede{max-width:36rem;margin:0 0 .75rem}
+.meta{color:var(--muted);margin:0;font-size:1rem}
+h2{font:800 1.75rem/1.2 var(--head);margin:0 0 1.5rem}
+h3{font:500 1.3rem/1.3 var(--head);margin:0 0 .25rem}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+p{margin:0 0 1rem;max-width:38rem}
+.row{padding:1.25rem 0;border-bottom:1px solid var(--line)}
+.row:first-of-type{padding-top:0}
+.row:last-child{border-bottom:0;padding-bottom:0}
+.row p{margin:0;color:var(--muted)}
+.focus{display:block;margin-top:.5rem;font:500 .95rem var(--head);color:var(--ink)}
+.three{display:grid;gap:1.5rem}
+.three p{margin:0 0 .75rem}
+.plain{font:800 clamp(1.5rem,5vw,2.1rem)/1.2 var(--head);letter-spacing:-.01em;margin:0 0 .5rem;max-width:none}
+.plain+.plain{color:var(--muted)}
+.steps{display:grid;gap:1.5rem}
+.steps h3{font:800 1.4rem var(--head)}
+.steps p{margin:0;color:var(--muted)}
+.audience{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
+.audience b{font:800 clamp(3rem,12vw,5rem)/1 var(--head);letter-spacing:-.04em;background:linear-gradient(transparent 62%,var(--mark) 62% 94%,transparent 94%)}
+.audience span{font:500 1.1rem var(--head)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:1rem 0 1.5rem;list-style:none}
+.chips li{padding:.3rem .8rem;border:1.5px solid var(--ink);border-radius:2rem;font:500 .95rem var(--head)}
+.cta{display:inline-block;margin:.5rem .75rem .5rem 0;padding:.8rem 1.4rem;background:var(--mark);color:var(--mark-ink);font:800 1.05rem var(--head);text-decoration:none;border-radius:.4rem}
+.cta.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.cta:hover{filter:brightness(1.08)}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:1rem;border-top:1px solid var(--line)}
+@media (min-width:40rem){.three{grid-template-columns:repeat(3,1fr)}.steps{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <strong>Lexzy</strong>
+    <nav aria-label="Main"><a href="#what">What I do</a><a href="#work">Work</a><a href="#audience">Audience</a><a href="#collab">Collaborate</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <img class="avatar" src="avatar.jpg" alt="Lexzy" width="240" height="240">
+      <p class="tag">Web3 content, distribution and community</p>
+      <h1>I help Web3 projects get <span>seen, understood and remembered.</span></h1>
+      <p class="lede">I create content that turns complex Web3 products into ideas people can understand, talk about and remember.</p>
+      <p class="meta">Nigeria &middot; <a href="https://x.com/Oxlekan">@Oxlekan</a> on X</p>
+    </div>
+
+    <section id="what">
+      <h2>What I do</h2>
+      <div class="three">
+        <div><h3>Content</h3><p>I turn products, narratives and technical ideas into content that feels natural on social media. From educational threads to short-form posts, I make people understand why something matters, not just what it is.</p></div>
+        <div><h3>Distribution</h3><p>Good products still need attention. I help projects get their message in front of the right Web3 audience through strategic content, campaign participation and consistent distribution.</p></div>
+        <div><h3>Community</h3><p>I care about what happens after someone sees a post. I join conversations, explain products, answer questions and help turn passive attention into genuine interest.</p></div>
+      </div>
+    </section>
+
+    <section id="why">
+      <h2>Why work with me?</h2>
+      <p class="plain">Web3 users see thousands of posts every day.</p>
+      <p class="plain">Most disappear.</p>
+      <p style="margin-top:1.5rem">My approach is different. I understand the product first, find the interesting angle behind the project, then create content around the part people will actually care about.</p>
+      <p>No forced hype. No empty engagement bait. Just content built around a clear idea.</p>
+    </section>
+
+    <section id="content">
+      <h2>Content I create</h2>
+      <div class="row"><h3>Product breakdowns</h3><p>Making new protocols, apps and products easier to understand.</p></div>
+      <div class="row"><h3>Educational content</h3><p>Breaking down Web3 concepts, opportunities and trends in a simple way.</p></div>
+      <div class="row"><h3>Campaign content</h3><p>Original posts that fit a campaign without feeling like advertisements.</p></div>
+      <div class="row"><h3>Threads</h3><p>Deep dives that explain a product, narrative or opportunity from start to finish.</p></div>
+      <div class="row"><h3>Market and narrative content</h3><p>Commentary on the developments and ideas shaping Web3.</p></div>
+      <div class="row"><h3>Community content</h3><p>Posts and conversations designed to encourage genuine discussion.</p></div>
+    </section>
+
+    <section id="work">
+      <h2>Selected work</h2>
+      <div class="row"><h3>Rally</h3><p>Campaign content around Rally's expansion into Robinhood Chain, focused on why the integration matters and which ecosystems could benefit from running campaigns.</p><span class="focus">Campaign storytelling, distribution, Web3 awareness</span></div>
+      <div class="row"><h3>Bambitz</h3><p>Content and community-driven awareness around Bambitz, its music ecosystem and the role of $BAM.</p><span class="focus">Storytelling, community, ecosystem awareness</span></div>
+      <div class="row"><h3>WahooPredict</h3><p>Content on prediction markets and a more analytical approach to market calls and crowd sentiment.</p><span class="focus">Prediction markets, education, community</span></div>
+    </section>
+
+    <section id="philosophy">
+      <h2>My content philosophy</h2>
+      <div class="steps">
+        <div><h3>Make people stop.</h3><p>The first job of content is attention.</p></div>
+        <div><h3>Make them understand.</h3><p>Attention means little if people don't understand what they're looking at.</p></div>
+        <div><h3>Give them a reason to care.</h3><p>The strongest content connects a product to something the audience already cares about.</p></div>
+        <div><h3>Make it memorable.</h3><p>A good post gets impressions. A great one leaves an idea behind.</p></div>
+      </div>
+    </section>
+
+    <section id="audience">
+      <h2>Audience</h2>
+      <div class="audience"><b>13K+</b><span>followers on X</span></div>
+      <p>A growing Web3-focused audience interested in crypto, emerging projects, opportunities, education and new narratives.</p>
+      <ul class="chips" aria-label="Audience interests">
+        <li>Crypto and Web3</li><li>DeFi</li><li>AI x Crypto</li><li>Trading and markets</li><li>Airdrops and opportunities</li><li>New protocols and products</li>
+      </ul>
+      <p class="meta">Detailed audience analytics and recent performance metrics are available on request.</p>
+    </section>
+
+    <section id="collab">
+      <h2>Collaboration</h2>
+      <p>I work with projects looking for more than a one-off promotional post.</p>
+      <div class="row"><h3>Campaigns</h3><p>Launch awareness, product campaigns and ecosystem campaigns.</p></div>
+      <div class="row"><h3>Creator partnerships</h3><p>Longer-term collaborations built around consistent content and distribution.</p></div>
+      <div class="row"><h3>Product awareness</h3><p>Content that introduces a product to the right audience and explains why it matters.</p></div>
+      <div class="row"><h3>Community campaigns</h3><p>Helping projects create conversations and attract genuine attention around their ecosystem.</p></div>
+    </section>
+
+    <section id="contact">
+      <h2>Let's build something worth talking about.</h2>
+      <p>If you have a product people should know about, let's turn it into content they can actually understand.</p>
+      <a class="cta" href="mailto:olalelekanezekiel@gmail.com">Email Lexzy</a>
+      <a class="cta alt" href="https://x.com/Oxlekan">Message on X</a>
+      <p class="meta" style="margin-top:1rem">Available for creator partnerships, campaigns and Web3 collaborations.</p>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Lexzy &middot; olalelekanezekiel@gmail.com</footer>
+</div>
+</body>
+</html>
